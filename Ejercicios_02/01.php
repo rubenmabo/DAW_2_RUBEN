@@ -22,3 +22,8 @@ function elMayor($a, $b, $c){
 }
 
 echo elMayor($a, $b, $c);
+
+?>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
