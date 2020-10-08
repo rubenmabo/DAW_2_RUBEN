@@ -13,9 +13,6 @@ for ($i=0;$i<50;$i++){
     }
 }
 
-//echo "Media  : " . $total / 50;
-//echo "Maximo : " . $max;
-//echo "Minimo : " . $min;
 ?>
 
 <table border="1">
