@@ -48,12 +48,23 @@ function resultado($j1, $j2){
     return $resultado;
 }
 
-echo figura_j1($j1);
-echo figura_j2($j2);
-echo resultado($j1, $j2);
 
 ?>
-</br></br></br>
+
+<table>
+  <tr>
+    <th>Jugador 1</th>
+    <th>Jugador 2</th>
+  </tr>
+  <tr>
+    <td align=center><h1><?php echo figura_j1($j1); ?></h1></td>
+    <td align=center><h1><?php echo figura_j2($j2); ?></h1></td>
+  </tr>
+  <tr>
+    <td align=center colspan="2"><?php echo resultado($j1, $j2); ?></td>
+  </tr>
+</table>
+
 <hr>
 <?php show_source(__FILE__); ?>
 <hr>
