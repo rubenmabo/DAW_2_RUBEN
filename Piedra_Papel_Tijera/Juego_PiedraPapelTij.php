@@ -52,3 +52,9 @@ echo figura_j1($j1);
 echo figura_j2($j2);
 echo resultado($j1, $j2);
 
+?>
+</br></br></br>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
+
