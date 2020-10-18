@@ -15,3 +15,10 @@ for ($i=1; $i<=$numero_de_columnas; $i++){
     }
     echo "</br>";
 }
+
+?>
+
+</br></br></br>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
