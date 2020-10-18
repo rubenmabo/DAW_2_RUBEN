@@ -48,3 +48,8 @@ $num1 = random_int(1, 10);
 		<td><?php echo $num1 * 10?></td>
 	</tr>
 </table>
+
+</br></br></br>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
