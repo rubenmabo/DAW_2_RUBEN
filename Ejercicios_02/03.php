@@ -12,3 +12,10 @@ echo $num1 . " * " . $num2 . " : " . calcMultiplicacion($num1, $num2, $resultado
 echo $num1 . " / " . $num2 . " : " . calcDivision($num1, $num2, $resultado) . "</br>";
 echo $num1 . " % " . $num2 . " : " . calcModulo($num1, $num2, $resultado) . "</br>";
 echo $num1 . " ** " . $num2 . " : " . calcPotencia($num1, $num2, $resultado) . "</br>";
+
+?>
+
+</br></br></br>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
