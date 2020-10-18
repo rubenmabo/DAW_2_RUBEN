@@ -12,3 +12,10 @@ echo "$num1 * $num2 = " .($num1 * $num2). "</br>";
 echo "$num1 / $num2 = " .($num1 / $num2). "</br>";
 echo "$num1 % $num2 = " .($num1 % $num2). "</br>";
 echo "$num1 ^ $num2 = " .($num1 ** $num2);
+
+?>
+
+</br></br></br>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
