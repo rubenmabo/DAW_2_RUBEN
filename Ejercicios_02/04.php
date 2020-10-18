@@ -34,3 +34,7 @@ for ($i=0;$i<50;$i++){
 </table>
 
 
+
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
