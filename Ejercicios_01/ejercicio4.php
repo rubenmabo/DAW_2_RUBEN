@@ -15,3 +15,10 @@ do{
 $tiempo_final= microtime(true);
 $tiempo_ejecucion= $tiempo_final - $tiempo_inicio;
 echo $tiempo_ejecucion;
+
+?>
+
+</br></br></br>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
