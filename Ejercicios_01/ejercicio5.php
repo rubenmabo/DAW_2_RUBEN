@@ -36,3 +36,9 @@ echo "Numero 2 : " . $num2 . "</br></br>";
 		<td><?php echo $num1 ** $num2?></td>
 	</tr>
 </table>
+
+
+</br></br></br>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
