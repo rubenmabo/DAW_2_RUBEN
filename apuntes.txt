@@ -1,0 +1,6 @@
+- trim($variable)  --> Quita los espacios en blanco del principio y del final de una cadena (no entre medias).
+
+- htmlspecialchars($variable)  --> Convierte el codigo html (<b>) a modo texto para que se muestre por el navegador.
+
+window.history.back --> Te da el error (Para formularios, usuario no existe)
+header("refresh:3;url=url.html)  --> despues de darte error te pide usuario y contraseña de nuevo
