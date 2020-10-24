@@ -1,5 +1,5 @@
 <?php
-//ARRAY ASOCIATIVOS
+//ARRAYs ASOCIATIVOS
 
 $medios = array(
     "El Pais"  => "https://www.elpais.com/",
@@ -8,3 +8,14 @@ $medios = array(
     "La Razon" => "https://www.larazon.es/",
     "Prensa" => "https://www.prensaescrita.com/",
 );
+
+foreach ($medios as $clave => $valor){
+    echo "<li> <a href=\"$valor\">$clave</a></li>";
+}
+
+?>
+
+<br>
+<hr>
+<?php show_source(__FILE__); ?>
+<hr>
