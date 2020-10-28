@@ -1,0 +1,31 @@
+<html>
+<head>
+<title>Formulario de subida de archivos</title>
+<meta charset="UTF-8">
+</head>
+<body>
+<h2>Subida de archivos al servidor</h2>
+
+<form  enctype="multipart/form-data" action="guardarimagenes.php" method="post">
+
+<label for="nombre">Indique su nombre:</label>
+<input type="text" name="nombre"><br>
+
+<!--  EL DIRECTORIO SE LE PASA POR EL PHP PORQUE SIEMPRE ES EL MISMO
+<label for="directorio">Indique el nombre del directorio donde se ubicar el archivo</label>
+-- El directorio tiene que tener la ruta completa o relativa --
+<input type="text" name="directorio" size="30" /> <br />
+ -->
+
+<!-- Se fija en el cliente el tamaño máximo en bytes ( no es seguro )
+ el limite máximo 200000 por fichero y 300000 entre los dos tambien se debe poner en .php
+-->
+<input type="hidden" name="MAX_FILE_SIZE" value="100000" /> <!--  100Kbytes -->
+
+<label>Elija Archivo 1 (Obligatorio)</label> <input name="archivo1" type="file" /> <br />
+<label>Elija Archivo 2 </label> <input name="archivo2" type="file" /> <br />
+
+<input type="submit" value="Subir archivo" />
+</form>
+</body>
+</html>
