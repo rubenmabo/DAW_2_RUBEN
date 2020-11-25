@@ -1,0 +1,21 @@
+cookies:
+$_COOKIE["variable"];
+
+ setcookie ("visitascasino",$visitas, time()+ 30 * 24 * 3600); // Un mes
+ setcookie("visitascasino",$_COOKIE['visitascasino']+1, time()+ 30 * 24 * 3600); // Un mes
+
+
+
+Sesiones:
+
+session_start();
+
+$_SESSION['variable'] 
+
+Leer fichero:
+
+$absoluto = file_get_contents('accesos.txt');  file_get_contents --> Esto es para leer el fichero
+
+file_put_contents('accesos.txt', $absoluto);   file_put_contents  --> Esto es para escribir el fichero
+
+
