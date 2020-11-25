@@ -14,7 +14,8 @@ if (isset($_POST["dejar"]) || ($_SESSION['dinero'] == '0') ) {
     echo "Muchas gracias por jugar con nosotros. <br> ";
     echo "Su resultado final es de " . $dinero_total . " Euros <br>";
     $visitas++;
-    setcookie("visitascasino",$visitas, time()+ 30 * 24 * 3600); // Un mes
+    setcookie("visitascasino",$_COOKIE['visitascasino']+1, time()+ 30 * 24 * 3600); // Un mes
+    echo "Veces que has jugado " . $_COOKIE['visitascasino'];
     session_destroy();
     exit();
 } else if (isset($_POST['apuesta'])){
