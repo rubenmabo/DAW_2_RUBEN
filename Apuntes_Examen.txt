@@ -21,3 +21,4 @@ file_put_contents('accesos.txt', $absoluto);   file_put_contents  --> Esto es pa
 
 Cuadro para meter informacion por pantalla (html)
 <input type="text" name="dinero" />
+$_POST['dinero']  --  (Para llamarlo desde el php)
