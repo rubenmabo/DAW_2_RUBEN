@@ -154,4 +154,11 @@ class Producto{
 		return $result;
 	}
 	
+	public function rebaja(){
+	    $sql = "UPDATE productos SET precio=precio*0.90 WHERE id={$this->id}";
+	    $this->db->query($sql);
+	}
+	
+	
+	
 }

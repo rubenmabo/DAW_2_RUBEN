@@ -28,6 +28,9 @@
 	</tr>
 	<?php while($pro = $productos->fetch_object()): ?>
 		<tr>
+		<!--  Aqui justo falta esto:
+			<td><input type="checkbox" name="tproductos[]" value"
+		-->
 			<td><?=$pro->id;?></td>
 			<td><?=$pro->nombre;?></td>
 			<td><?=$pro->precio;?></td>

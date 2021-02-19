@@ -135,4 +135,18 @@ class productoController{
 		header('Location:'.base_url.'Producto/gestion');
 	}
 	
+	
+	public function rebajar(){
+	    Utils::isAdmin();
+	    
+	    if (isset ( $POST['tproductos'])){
+	        $p = new Producto();
+	        foreach ( $_POST ['tproductos'] as $id_producto){
+	            $p->setId($id_producto);
+	            $p->rebaja();
+	        }
+	    }
+	    header('Location:'.base_url.'Producto/gestion');
+	}
+	
 }

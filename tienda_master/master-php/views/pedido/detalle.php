@@ -55,5 +55,7 @@
 				</tr>
 			<?php endwhile; ?>
 		</table>
+		
+		<input type="submit" value="Imprimir PDF" />
 
 	<?php endif; ?>
