@@ -138,6 +138,46 @@ public static function GetOne ($codigo){
     
 }
 
+//Buscar peliculas por el titulo
+public static function GetbyTitulo($valor){
+    $stmt = self::$dbh->prepare(" Select * from peliculas where nombre like ?");
+    $stmt->bindValue(1,$valor."%");
+    $stmt->execute();
+    $tpelis = [];
+    $stmt->setFetchMode(PDO::FETCH_CLASS, 'Pelicula');
+    while ( $peli = $stmt->fetch()){
+        $tpelis[] = $peli;       
+    }
+    return $tpelis;
+}
+
+//Buscar peliculas por director
+public static function GetbyDirector($valor){
+    $stmt = self::$dbh->prepare(" Select * from peliculas where director like ?");
+    $stmt->bindValue(1,$valor."%");
+    $stmt->execute();
+    $tpelis = [];
+    $stmt->setFetchMode(PDO::FETCH_CLASS, 'Pelicula');
+    while ( $peli = $stmt->fetch()){
+        $tpelis[] = $peli;       
+    }
+    return $tpelis;
+}
+
+
+//Buscar peliculas por Genero
+public static function GetbyGenero($valor){
+    $stmt = self::$dbh->prepare(" Select * from peliculas where genero like ?");
+    $stmt->bindValue(1,$valor."%");
+    $stmt->execute();
+    $tpelis = [];
+    $stmt->setFetchMode(PDO::FETCH_CLASS, 'Pelicula');
+    while ( $peli = $stmt->fetch()){
+        $tpelis[] = $peli;       
+    }
+    return $tpelis;
+}
+
 
 // Datos de una película para visualizar
 

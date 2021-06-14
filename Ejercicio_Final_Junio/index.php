@@ -4,6 +4,7 @@ session_start();
 include_once 'app/config.php';
 include_once 'app/controlerPeli.php';
 include_once 'app/modeloPeliDB.php';
+include_once 'app/funcionesaux.php';
 
 // Inicializo el modelo 
 ModeloPeliDB::Init();
@@ -21,8 +22,25 @@ $rutasPelis = [
     "Borrar"      => "ctlPeliBorrar",
     "Cerrar"      => "ctlPeliCerrar",
     "VerPelis"    => "ctlPeliVerPelis",
+    "Buscar Título"   => "ctlBuscaTitulo",
+    "Buscar Genero"   => "ctlBuscaGenero",
+    "Buscar Director" => "ctlBuscaDirector",
+    "votar" => "ctlVotar",
+    "Salir" => "ctlSalir"
 ];
 
+// Evito inyección html
+limpiarArrayEntrada($_POST);
+limpiarArrayEntrada($_GET);
+
+
+
+
+if ( !isset( $_SESSION['autentificado'])) {
+    ctlIndentificacion();
+    return;
+
+}
 
 
 if (isset($_GET['orden'])){
@@ -46,7 +64,3 @@ if (isset($_GET['orden'])){
  
 // Llamo a la función seleccionada
 $procRuta();
-
-
-
-
